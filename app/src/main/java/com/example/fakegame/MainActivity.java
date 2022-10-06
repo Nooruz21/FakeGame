@@ -19,15 +19,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         binding.btnGame.setOnClickListener(view -> {
-            initNav();
+            Intent intent = new Intent(this, GameOneActivity.class);
+            startActivity(intent);
+            finish();
         });
 
 
     }
 
-    private void initNav() {
-        Intent intent = new Intent(this, GameOneActivity.class);
-        startActivity(intent);
-        finish();
-    }
+
 }
